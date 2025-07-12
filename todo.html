@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/todo.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <header class="heading">
+        <h1>To - Do List</h1>
+    </header>
+    <section class="main">
+        <div class="heading-1">
+            <h2 class="text-slider">
+                <span id="element"></span>
+            </h2>
+        </div>
+        <hr id="horizone">
+        <div class="input">
+            <label for="text1">Enter Task :</label>
+            <input type="text" id="text1" placeholder=" Enter Pending Task" required autofocus autocapitalize>
+            <button class="btn" id="btn-id">Add</button>
+        </div>
+        <div class="adding-task">
+        </div>
+    </section>
+    <script src="../js/todo.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome ! To Do List', 
+            'Here You Can Add Maximum 10 Task Daily', 
+            'It Is Free To Use', 
+            'You Can Add Task According to Your Need', 
+            'You Can Also Delete The Task', 
+            'It Is Very Simple To Use'],
+            typeSpeed: 100,
+            loop:true,
+            backSpeed:10,
+            backDelay:1000,
+        });
+    </script>
+
+</body>
+
+</html>

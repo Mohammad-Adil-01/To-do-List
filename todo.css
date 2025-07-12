@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Shafarik&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    width: 100%;
+    height: 150vh;
+    background-image: url(../image/body.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading {
+    visibility: hidden;
+}
+.main {
+    margin: auto;
+    width: 50%;
+    height: 140vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.main::before{
+    transition: all 0.5s ease-in;
+}
+.main:hover{
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 500px rgb(27, 27, 71);
+}
+.heading-1 {
+    padding: 40px;
+    text-align: center;
+    color: rgb(58, 58, 108);
+    font-size: 30px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+#horizone{
+    border: 2px solid rgb(26, 26, 61);
+    margin: 10px 100px;
+}
+.input {
+    margin: 30px auto;
+    padding: 10px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+label {
+    font-size: 28px;
+}
+#text1 {
+    padding: 3px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.btn {
+    padding: 5px;
+    width: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn:hover{
+    color:rgb(57, 0, 0);
+    transition: all 0.9s ease-out;
+    transform: translateX(5px);
+    
+}
+.adding-task {
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+    padding: 10px ;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    color: rgb(6, 6, 104);
+    gap: 10px;
+    font-size: 32px;
+    
+}
+p,.task1{
+    background-color: rgba(158, 58, 58, 0);
+    font-size: 30px;
+    color: rgb(0, 62, 116);
+    border-radius: 5px;
+}
+.task-container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.task-container .remove-btn{
+    font-size: 0.6em;
+    color: rgb(19, 13, 59);
+    margin: 2px 5px;
+    background-color: rgb(171, 169, 165);
+    border-radius: 5px;
+}
+.remove-btn:hover{
+    transition: all 0.5s ease;
+    color: lavender;
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+
+
+
